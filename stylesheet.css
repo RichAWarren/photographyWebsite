@@ -63,7 +63,7 @@ img {
   vertical-align:bottom;
 }
 
-.lefthover:hover {
+.lefthover {
   position:relative;
   top:0px;
   left:0px;
@@ -73,7 +73,7 @@ img {
   z-index:2;
 }
 
-.righthover:hover {
+.righthover {
   position:relative;
   float: right;
   top:0px;
@@ -84,7 +84,7 @@ img {
   z-index:2;
 }
 
-.centerhover:hover {
+.centerhover {
   position:relative;
   top:0px;
   width:189%;

@@ -31,3 +31,47 @@ function changeImg() {
 shuffle(myImages);
 
 changeImg();
+
+var lastClicked = 0
+
+function rightEnlarge(clickid) {
+  clearEnlarge();
+  var d = document.getElementById(clickid);
+  if (clickid !== lastClicked) {
+  d.classList.toggle('righthover');
+  };
+  lastClicked = clickid;
+};
+
+function leftEnlarge(clickid) {
+  clearEnlarge();
+  var d1 = document.getElementById(clickid);
+  if (clickid !== lastClicked) {
+  d1.classList.toggle('lefthover');
+  };
+  lastClicked = clickid;
+};
+
+function centerEnlarge(clickid) {
+  clearEnlarge();
+  var d2 = document.getElementById(clickid);
+  if (clickid !== lastClicked) {
+  d2.classList.toggle('centerhover');
+  };
+  lastClicked = clickid;
+};
+
+function clearEnlarge() {
+  var elements = document.querySelectorAll(".righthover");
+  for (var i = elements.length-1; i > -1; i--) {
+     elements[i].classList.remove('righthover');
+  }
+  var elements1 = document.querySelectorAll(".centerhover");
+  for (var j = elements1.length-1; j > -1; j--) {
+     elements1[j].classList.remove('centerhover');
+  }
+  var elements2 = document.querySelectorAll(".lefthover");
+  for (var k = elements2.length-1; k > -1; k--) {
+     elements2[k].classList.remove('lefthover');
+  }
+}
