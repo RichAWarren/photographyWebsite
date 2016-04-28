@@ -16,6 +16,7 @@ body{
     color: #2e2e2e;
     font-family: Helvetica, sans-serif;
     letter-spacing: 1px;
+    z-index:999;
 }
 .content {
     width:100%;
@@ -62,12 +63,47 @@ img {
   vertical-align:bottom;
 }
 
-img:hover {
-  filter: gray; /* IE6-9 */
-  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+.lefthover:hover {
+  position:relative;
+  top:0px;
+  left:0px;
+  width:212.5%;
+  height:auto;
+  display:block;
+  z-index:2;
 }
 
+.righthover:hover {
+  position:relative;
+  float: right;
+  top:0px;
+  right:0px;
+  width:212.5%;
+  height:auto;
+  display:block;
+  z-index:2;
+}
+
+.centerhover:hover {
+  position:relative;
+  top:0px;
+  width:189%;
+  height:auto;
+  display:block;
+  z-index:2;
+}
+
+.leftPhoto:hover {
+  overflow: visible;
+}
+
+.rightPhoto:hover {
+  overflow: visible;
+}
+
+.centerPhoto:hover {
+  overflow: visible;
+}
 
 .leftPhoto {
   display: inline-block;
