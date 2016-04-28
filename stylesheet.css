@@ -1,0 +1,80 @@
+body{
+    position: absolute;
+    background:white;
+    height: 1430px;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    height:80px;
+    background:white;
+    width:100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    color: #2e2e2e;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+.content {
+    width:100%;
+    background: yellow;
+    border: 1px solid #CCC;
+    height: 2000px;
+}
+
+.astext {
+    background:none;
+    border:none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #2e2e2e;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 13px;
+    top; 33.5px;
+}
+
+.navButtons {
+    margin-left: 30px;
+    margin-top: 30px;
+    float:left;
+}
+
+#title {
+  text-align: right;
+  margin-top: 28px;
+  margin-right: 50px;
+  font-size: 24px;
+  top: 0px;
+  float: right;
+}
+
+.spacer {
+  width: 100%;
+  height: 80px;
+}
+
+img {
+  width:100%;
+  height: auto;
+  vertical-align:bottom;
+}
+
+.leftPhoto {
+  display: inline-block;
+  float: left;
+  width: 32%;
+}
+
+.rightPhoto {
+  display: inline-block;
+  float: right;
+  width: 32%;
+}
+
+.centerPhoto {
+  display: inline-block;
+  width: 36%;
+}
